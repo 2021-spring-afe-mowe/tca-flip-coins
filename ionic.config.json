@@ -1,0 +1,7 @@
+{
+  "name": "tca-flip-coins",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
