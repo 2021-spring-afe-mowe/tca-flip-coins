@@ -1,20 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      tca-flip-coins
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-list-header>Choice of head or tail</ion-list-header>
+      <ion-item>
+        <ion-label>I call head</ion-label>
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
+        <ion-label>I call tails</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox color="tertiary" checked slot="start"></ion-checkbox>
+        <ion-label>Opponent calls head</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox color="secondary" slot="start"></ion-checkbox>
+        <ion-label>Opponent calls tail</ion-label>
+      </ion-item>
+      
+    </ion-list>
 </ion-content>
