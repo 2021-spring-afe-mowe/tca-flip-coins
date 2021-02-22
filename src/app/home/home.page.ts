@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  //constructor() {}
+  public form = [
+    { val: 'I call HEAD', isChecked: false },
+    { val: 'I call TAIL', isChecked: true },
+    { val: 'OPPONENT calls HEAD', isChecked: true },
+    { val: 'OPPONENT calls TAIL', isChecked: false }
+  ];
 
 }
