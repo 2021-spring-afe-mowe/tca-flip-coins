@@ -9,8 +9,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/head-or-tail.jpg" alt="coins">
+      
+      <ion-card-title>Flip Coins</ion-card-title>
+    </ion-card-header>
+    <ion-tabs>
+     
+    </ion-tabs>
+
+    <ion-tab-button >
+            
+      <ion-button shape="round">Flip Coins</ion-button>
+            
+    </ion-tab-button>
+   
+  
+  </ion-card>
   <ion-list>
-    <ion-list-header >PICK HEAD or TAIL</ion-list-header>
+    <ion-list-header color="danger">PICK HEAD or TAIL</ion-list-header>
       <ion-item>
         <ion-label>Albert calls HEAD</ion-label>
         <ion-checkbox color="primary" slot="start"></ion-checkbox>
@@ -29,32 +47,20 @@
       </ion-item>
       
     </ion-list>
+    <ion-list>
+      <ion-list-header color="danger">Choose your Coins</ion-list-header>
+        <ion-item>
+          <ion-label>Quarter</ion-label>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox color="dark"  checked slot="start"></ion-checkbox>
+          <ion-label>Nickel</ion-label>
+        </ion-item>
+                
+      </ion-list>
 
-    <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        
-    
-        <ion-tab-button >
-          
-          <ion-button shape="round">Flip Coins</ion-button>
-          
-        </ion-tab-button>
-    
-        <ion-tab-button >
-          
-          <ion-button shape="round">Reset</ion-button>
-
-          
-        </ion-tab-button>
-    
-        <ion-tab-button >
-          
-          <ion-button shape="round">Quit</ion-button>
-         
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-
+      
     
 </ion-content>
 
