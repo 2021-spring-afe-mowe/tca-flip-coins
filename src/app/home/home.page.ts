@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/Router';
+
 
 
 
@@ -17,15 +17,8 @@ export class HomePage {
     { val: 'OPPONENT calls HEAD', isChecked: true },
     { val: 'OPPONENT calls TAIL', isChecked: false }
   ];
-  constructor(private router: Router) {}
-  ngOnInit() {
-  }
-
-  flipCoins() {
-    this.router.navigate(['/game-played']);
+  //constructor() {}
   
-
-  }
   
 
 }
