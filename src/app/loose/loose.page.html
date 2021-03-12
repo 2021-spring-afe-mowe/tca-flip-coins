@@ -45,9 +45,13 @@
       <ion-badge color="light" slot="end">76</ion-badge>
     </ion-item>
     <br />
-    <ion-button color="success" routerLink="/home">Play again</ion-button>
+    <ion-footer>
+      <ion-toolbar color="tertiary">
+    <ion-button color="success"slot="start" routerLink="/home">PLAY AGAIN</ion-button>
     &nbsp;&nbsp;
-    <ion-button color="danger" routerLink="/game-played">Quit</ion-button>
+    <ion-button color="danger" slot="end" routerLink="/game-played">QUIT</ion-button>
+  </ion-toolbar>
+</ion-footer>
     
   </ion-list>
 

@@ -31,7 +31,6 @@
     <ion-header translucent>
       <ion-toolbar>
         <ion-title color="primary">Game Lost</ion-title>
-        
       </ion-toolbar>
     </ion-header>
     <ion-item>
@@ -66,10 +65,15 @@
       <ion-badge color="light" slot="end">76</ion-badge>
     </ion-item>
     <br />
-    <ion-button color="success" routerLink="/win">Win</ion-button>&nbsp;&nbsp;
-    <ion-button color="success" routerLink="/loose">Loose</ion-button>&nbsp;&nbsp;
-    <ion-button color="danger" routerLink="/game-played">Quit</ion-button>
+    <ion-footer>
+      <ion-toolbar color="tertiary">
+        
+      
+    <ion-button color="success" slot="start"routerLink="/win">WIN</ion-button>&nbsp;&nbsp;&nbsp;&nbsp;
     
+    <ion-button color="danger" slot="end" routerLink="/loose">LOOSE</ion-button>
+  </ion-toolbar>
+  </ion-footer>
   </ion-list>
 
 </ion-content>
