@@ -9,71 +9,109 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  
   <ion-card>
     <ion-card-header>
-      <img src="assets/head-or-tail.jpg" alt="coins">
-      
-      </ion-card-header>
+    <img src="assets/head-or-tail.jpg" alt="coins">
+
+    </ion-card-header>
     <ion-tabs>
-     
+
     </ion-tabs>
 
     <ion-tab-button >
-            
-      <ion-button size="large" shape="round" routerLink="/game-played">FLIP COINS HERE</ion-button>
-            
+
+    <ion-button size="large" shape="round" routerLink="/game-played" (click)="showGameResult()">FLIP COINS HERE</ion-button>
+
     </ion-tab-button>
-   
-  
   </ion-card>
+
   <ion-list>
-    <ion-list-header color="danger">PICK HEAD or TAIL</ion-list-header>
-    <ion-reorder-group disabled="false">  
-    <ion-item>
-        <ion-label>Albert calls HEAD</ion-label>
+
+    <ion-list-header color="danger">
+      PICK HEAD or TAIL
+    </ion-list-header>
+
+    <ion-reorder-group disabled="false">
+
+      <ion-item>
+        <ion-label>
+          Albert calls HEAD
+        </ion-label>
+        
         <ion-checkbox color="primary" slot="start"></ion-checkbox>
+
         <ion-reorder slot="end">
           <ion-icon name="list-outline"></ion-icon>
         </ion-reorder>
       </ion-item>
+
       <ion-item>
         <ion-checkbox color="dark"  checked slot="start"></ion-checkbox>
-        <ion-label>Albert calls TAIL</ion-label>
+        
+        <ion-label>
+          Albert calls TAIL
+        </ion-label>
+
         <ion-reorder slot="end">
-          <ion-icon name="list-outline"></ion-icon>
+        <ion-icon name="list-outline"></ion-icon>
         </ion-reorder>
       </ion-item>
+
       <ion-item>
         <ion-checkbox color="danger"  checked slot="start"></ion-checkbox>
-        <ion-label>OPPONENT calls HEAD</ion-label>
+
+        <ion-label>
+          OPPONENT calls HEAD
+        </ion-label>
+        
         <ion-reorder slot="end">
-          <ion-icon name="list-outline">--</ion-icon>
-        </ion-reorder>
+        <ion-icon name="list-outline"></ion-icon>
+      </ion-reorder>
       </ion-item>
+
       <ion-item>
         <ion-checkbox color="secondary"  slot="start"></ion-checkbox>
-        <ion-label>OPPONENT calls TAIL</ion-label>
+
+        <ion-label>
+          OPPONENT calls TAIL
+        </ion-label>
+
         <ion-reorder slot="end">
           <ion-icon name="list-outline"></ion-icon>
         </ion-reorder>
       </ion-item>
-    </ion-reorder-group>
-      
-    </ion-list>
-    <ion-list>
-      <ion-list-header color="danger">Choose your Coins</ion-list-header>
-        <ion-item>
-          <ion-label>Quarter</ion-label>
-          <ion-checkbox color="primary" slot="start"></ion-checkbox>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="dark"  checked slot="start"></ion-checkbox>
-          <ion-label>Nickel</ion-label>
-        </ion-item>
-                
-      </ion-list>
 
-      
-    
+    </ion-reorder-group>
+
+    </ion-list>
+
+    <ion-list>
+
+      <ion-list-header color="danger">
+        Choose your Coins
+      </ion-list-header>
+
+      <ion-item>
+
+        <ion-label>
+          Quarter
+        </ion-label>
+
+        <ion-checkbox color="primary" slot="start"></ion-checkbox>
+
+      </ion-item>
+
+      <ion-item>
+
+        <ion-checkbox color="dark"  checked slot="start"></ion-checkbox>
+        
+        <ion-label>
+          Nickel
+        </ion-label>
+    </ion-item>
+
+  </ion-list>
+
 </ion-content>
 
