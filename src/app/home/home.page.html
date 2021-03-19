@@ -21,7 +21,7 @@
 
     <ion-tab-button >
 
-    <ion-button size="large" shape="round" routerLink="/game-played" (click)="showGameResult()">FLIP COINS HERE</ion-button>
+    <ion-button size="large" shape="round" routerLink="/game-played" >FLIP COINS HERE</ion-button>
 
     </ion-tab-button>
   </ion-card>
@@ -35,11 +35,13 @@
     <ion-reorder-group disabled="false">
 
       <ion-item>
+        <ion-button expand="block" size="default" color="light" (click)="showNumberOfHead()">
         <ion-label>
           Albert calls HEAD
         </ion-label>
         
         <ion-checkbox color="primary" slot="start"></ion-checkbox>
+      </ion-button>
 
         <ion-reorder slot="end">
           <ion-icon name="list-outline"></ion-icon>
@@ -47,11 +49,13 @@
       </ion-item>
 
       <ion-item>
+        <ion-button expand="block" size="default" color="light" (click)="showAlbertNumberOfTail()">
         <ion-checkbox color="dark"  checked slot="start"></ion-checkbox>
         
         <ion-label>
           Albert calls TAIL
         </ion-label>
+      </ion-button>
 
         <ion-reorder slot="end">
         <ion-icon name="list-outline"></ion-icon>
@@ -59,11 +63,13 @@
       </ion-item>
 
       <ion-item>
+        <ion-button expand="block" size="default" color="light" (click)="showOpponentNumberOfHead()">
         <ion-checkbox color="danger"  checked slot="start"></ion-checkbox>
 
         <ion-label>
           OPPONENT calls HEAD
         </ion-label>
+      </ion-button>
         
         <ion-reorder slot="end">
         <ion-icon name="list-outline"></ion-icon>
@@ -71,15 +77,19 @@
       </ion-item>
 
       <ion-item>
+
+        <ion-button expand="block" size="default" color="light" (click)="showOpponentNumberOfTail()">
         <ion-checkbox color="secondary"  slot="start"></ion-checkbox>
 
         <ion-label>
           OPPONENT calls TAIL
         </ion-label>
 
-        <ion-reorder slot="end">
-          <ion-icon name="list-outline"></ion-icon>
-        </ion-reorder>
+        
+      </ion-button>
+      <ion-reorder slot="end">
+        <ion-icon name="list-outline"></ion-icon>
+      </ion-reorder>
       </ion-item>
 
     </ion-reorder-group>
@@ -93,22 +103,29 @@
       </ion-list-header>
 
       <ion-item>
+        <ion-button expand="block" size="default" color="light" (click)="showNumberOfQuarter()">
 
         <ion-label>
           Quarter
         </ion-label>
 
         <ion-checkbox color="primary" slot="start"></ion-checkbox>
+      </ion-button>
 
       </ion-item>
 
       <ion-item>
+        <ion-button expand="block" size="default" color="light" (click)="showNumberOfNickel()">
+       
 
         <ion-checkbox color="dark"  checked slot="start"></ion-checkbox>
+
+        
         
         <ion-label>
           Nickel
         </ion-label>
+      </ion-button>
     </ion-item>
 
   </ion-list>
