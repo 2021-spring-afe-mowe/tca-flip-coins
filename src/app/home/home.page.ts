@@ -127,9 +127,12 @@ export class HomePage {
     let navigationExtras: NavigationExtras = {
       state: {
         user: this.user
+        
       }
+      
     };
     this.router.navigate(['game-played'], navigationExtras)
+    console.log("clicked");
   }
   
   
