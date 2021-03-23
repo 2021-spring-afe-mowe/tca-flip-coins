@@ -22,11 +22,11 @@ export class GamePlayedPage implements OnInit {
   ngOnInit() {
   }
   wonGame(){
-    this.router.navigateByUrl("/");
+    this.router.navigateByUrl("/win");
   }
 
   lostGame(){
-    this.router.navigateByUrl("/");
+    this.router.navigateByUrl("/loose");
   }
 
 }
