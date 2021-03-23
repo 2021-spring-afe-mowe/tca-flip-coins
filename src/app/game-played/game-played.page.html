@@ -69,9 +69,9 @@
       <ion-toolbar color="tertiary">
         
       
-    <ion-button size="large" color="success" slot="start"routerLink="/win">WIN</ion-button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <ion-button size="large" color="success" slot="start" (click)="wonGame()">WIN</ion-button>&nbsp;&nbsp;&nbsp;&nbsp;
     
-    <ion-button size="large" color="danger" slot="end" routerLink="/loose">LOOSE</ion-button>
+    <ion-button size="large" color="danger" slot="end" (click)="lostGame()">LOOSE</ion-button>
   </ion-toolbar>
   </ion-footer>
   </ion-list>

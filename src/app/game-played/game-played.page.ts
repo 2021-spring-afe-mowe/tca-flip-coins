@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -11,12 +12,21 @@ export class GamePlayedPage implements OnInit {
 
 
 
-  constructor() { 
-    
+  constructor(
+    private router: Router
+  ) { 
+   
 
   }
 
   ngOnInit() {
+  }
+  wonGame(){
+    this.router.navigateByUrl("/");
+  }
+
+  lostGame(){
+    this.router.navigateByUrl("/");
   }
 
 }

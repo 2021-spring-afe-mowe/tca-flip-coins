@@ -46,10 +46,10 @@
     <br />
     <ion-footer>
       <ion-toolbar color="tertiary">
-    <ion-button size="large" color="success" slot="start" routerLink="/home">PLAY AGAIN</ion-button>
+    <ion-button size="large" color="success" slot="start" (click)="playAgain()">PLAY AGAIN</ion-button>
 
     
-    <ion-button size="large" color="danger" slot="end" routerLink="/game-played">QUIT</ion-button>
+    <ion-button size="large" color="danger" slot="end" (click)="quit()">QUIT</ion-button>
 
   </ion-toolbar>
 </ion-footer>
