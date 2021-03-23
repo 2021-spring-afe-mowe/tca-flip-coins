@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TcaFlipCoinsService } from '../tca-flip-coins.service';
 
 
 
@@ -14,6 +15,7 @@ export class GamePlayedPage implements OnInit {
 
   constructor(
     private router: Router
+    , private myTcaFlipCoinsSvc: TcaFlipCoinsService
   ) { 
    
 
@@ -22,10 +24,19 @@ export class GamePlayedPage implements OnInit {
   ngOnInit() {
   }
   wonGame(){
+    this.myTcaFlipCoinsSvc.gameResult = [
+      ...this.myTcaFlipCoinsSvc.gameResult
+    ,"W"
+    ];
+    
     this.router.navigateByUrl("/win");
   }
 
   lostGame(){
+    this.myTcaFlipCoinsSvc.gameResult = [
+      ...this.myTcaFlipCoinsSvc.gameResult
+    ,"L"
+    ];
     this.router.navigateByUrl("/loose");
   }
 

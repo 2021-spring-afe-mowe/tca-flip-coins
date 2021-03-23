@@ -7,8 +7,5 @@ export class TcaFlipCoinsService {
 
   constructor() { }
 
-  gameResult = [
-    "W"
-    ,"L"
-  ];
+  gameResult = [];
 }
