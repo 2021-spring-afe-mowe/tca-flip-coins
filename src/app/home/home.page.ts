@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TcaFlipCoinsService } from '../tca-flip-coins.service';
 
 
 
@@ -20,6 +21,7 @@ export class HomePage {
   ];
   constructor(
     private routerSvc: Router
+    , public tcaFlipCoins: TcaFlipCoinsService 
   ) {}
   
   gamePlayed() {
