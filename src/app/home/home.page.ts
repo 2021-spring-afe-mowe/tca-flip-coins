@@ -25,7 +25,7 @@ export class HomePage {
   ) {}
   
   gamePlayed() {
-    this.routerSvc.navigateByUrl("/game-played");
+    this.routerSvc.navigateByUrl("/record-result");
   }
   
   showNumberOfHead() {

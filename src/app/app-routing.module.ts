@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'loose',
     loadChildren: () => import('./loose/loose.module').then( m => m.LoosePageModule)
   },
+  {
+    path: 'record-result',
+    loadChildren: () => import('./record-result/record-result.module').then( m => m.RecordResultPageModule)
+  },
 ];
 
 @NgModule({

@@ -39,6 +39,9 @@ export class GamePlayedPage implements OnInit {
     ];
     this.router.navigateByUrl("/loose");
   }
+  playAgain() {
+    this.router.navigateByUrl("/");
+  }
 
   get winningPercentage() {
     return this.myTcaFlipCoinsSvc.gameResult.filter(x => x == "W").length
