@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TcaFlipCoinsService } from '../tca-flip-coins.service';
 
 @Component({
   selector: 'app-record-result',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecordResultPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public sharedDataService: TcaFlipCoinsService
+  ) { }
 
   ngOnInit() {
   }

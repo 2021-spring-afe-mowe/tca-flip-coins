@@ -32,9 +32,9 @@
       PICK HEAD or TAIL ({{tcaFlipCoins.gameResult.length}})
     </ion-list-header>
 
-    
+    <ion-radio-group [(ngModel)]="tcaFlipCoins.albertCalled">
+
       <ion-item>
-        <ion-button expand="block" size="large" color="light" (click)="showNumberOfHead()">
         <ion-label>
           <div>
             <p>ALBERT calls head</p> 
@@ -43,17 +43,13 @@
           </div>
           
         </ion-label>
-        
-        <ion-checkbox color="primary" slot="start"></ion-checkbox>
-      </ion-button>
 
+        <ion-radio value="heads"></ion-radio>
+ 
         
       </ion-item>
 
       <ion-item>
-        <ion-button expand="block" size="large" color="light" (click)="showAlbertNumberOfTail()">
-        <ion-checkbox color="success"  slot="start"></ion-checkbox>
-        
         <ion-label>
           <div>
             <p>ALBERT calls Tail</p> 
@@ -61,11 +57,11 @@
             <p>OPPONENT calls Head</p> 
           </div>
         </ion-label>
-      </ion-button>
-
-        
+ 
+        <ion-radio value="tails"></ion-radio>       
       </ion-item>
 
+    </ion-radio-group>
       
    
 
