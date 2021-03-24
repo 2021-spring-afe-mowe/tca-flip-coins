@@ -37,4 +37,24 @@ export class LoosePage implements OnInit {
     ;
   }
 
+  get numberOfHead() {
+    return this.tcaFlipCoins.whatCalled.filter(x => x == "H").length
+    ;
+  }
+
+  get numberOfTail() {
+    return this.tcaFlipCoins.whatCalled.filter(x => x == "T").length
+    ;
+  }
+
+  get numberOfQuarter() {
+    return this.tcaFlipCoins.coins.filter(x => x == "Q").length
+    ;
+  }
+
+  get numberOfNickel() {
+    return this.tcaFlipCoins.coins.filter(x => x == "N").length
+    ;
+  }
+
 }

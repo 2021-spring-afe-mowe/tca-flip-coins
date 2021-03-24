@@ -52,4 +52,24 @@ export class GamePlayedPage implements OnInit {
     ;
   }
 
+  get numberOfHead() {
+    return this.myTcaFlipCoinsSvc.whatCalled.filter(x => x == "H").length
+    ;
+  }
+
+  get numberOfTail() {
+    return this.myTcaFlipCoinsSvc.whatCalled.filter(x => x == "T").length
+    ;
+  }
+
+  get numberOfQuarter() {
+    return this.myTcaFlipCoinsSvc.coins.filter(x => x == "Q").length
+    ;
+  }
+
+  get numberOfNickel() {
+    return this.myTcaFlipCoinsSvc.coins.filter(x => x == "N").length
+    ;
+  }
+
 }

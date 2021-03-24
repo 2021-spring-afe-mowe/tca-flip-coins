@@ -29,31 +29,31 @@ export class HomePage {
   }
   
   showNumberOfHead() {
-    this.tcaFlipCoins.gameResult = [
-      ...this.tcaFlipCoins.gameResult
-    ,"W"
+    this.tcaFlipCoins.whatCalled = [
+      ...this.tcaFlipCoins.whatCalled
+    
     ,"H"
     ];
   }
   
   showAlbertNumberOfTail() {
-    this.tcaFlipCoins.gameResult = [
-      ...this.tcaFlipCoins.gameResult
-      ,"L"
+    this.tcaFlipCoins.whatCalled = [
+      ...this.tcaFlipCoins.whatCalled
+  
       ,"T"
     ];
   }
   
   showNumberOfQuarter() {
-    this.tcaFlipCoins.gameResult = [
-      ...this.tcaFlipCoins.gameResult
+    this.tcaFlipCoins.coins = [
+      ...this.tcaFlipCoins.coins
     ,"Q"
     ];
   }
 
   showNumberOfNickel() { 
-    this.tcaFlipCoins.gameResult = [
-      ...this.tcaFlipCoins.gameResult
+    this.tcaFlipCoins.coins = [
+      ...this.tcaFlipCoins.coins
     ,"N"
     ];
   }
