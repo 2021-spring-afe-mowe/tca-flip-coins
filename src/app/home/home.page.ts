@@ -29,19 +29,33 @@ export class HomePage {
   }
   
   showNumberOfHead() {
-    
+    this.tcaFlipCoins.gameResult = [
+      ...this.tcaFlipCoins.gameResult
+    ,"W"
+    ,"H"
+    ];
   }
   
   showAlbertNumberOfTail() {
-    
+    this.tcaFlipCoins.gameResult = [
+      ...this.tcaFlipCoins.gameResult
+      ,"L"
+      ,"T"
+    ];
   }
   
   showNumberOfQuarter() {
-    
+    this.tcaFlipCoins.gameResult = [
+      ...this.tcaFlipCoins.gameResult
+    ,"Q"
+    ];
   }
 
   showNumberOfNickel() { 
-    
+    this.tcaFlipCoins.gameResult = [
+      ...this.tcaFlipCoins.gameResult
+    ,"N"
+    ];
   }
 
 }

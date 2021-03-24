@@ -8,12 +8,12 @@
   <ion-list>
     <ion-header translucent>
       <ion-toolbar>
-        <ion-title color="primary">Game win</ion-title>
+        <ion-title color="primary">Game win ({{tcaFlipCoins.gameResult.length}})</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-item>
       <ion-label>Number of Head</ion-label>
-      <ion-badge color="warning" slot="end">100</ion-badge>
+      <ion-badge color="warning" slot="end">({{tcaFlipCoins.whatCalled.length}})</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Percent of Head</ion-label>
@@ -21,7 +21,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Number of Tail</ion-label>
-      <ion-badge color="success" slot="end">76</ion-badge>
+      <ion-badge color="success" slot="end">({{tcaFlipCoins.whatCalled.length}})</ion-badge>
       
     </ion-item>
     <ion-item>
@@ -31,17 +31,17 @@
     
     <ion-header translucent>
       <ion-toolbar>
-        <ion-title color="primary">Coins Used</ion-title>
+        <ion-title color="primary">Coins Used ({{tcaFlipCoins.gameResult.length}})</ion-title>
         
       </ion-toolbar>
     </ion-header>
     <ion-item>
       <ion-label>Number of Quarter</ion-label>
-      <ion-badge color="danger" slot="end">100</ion-badge>
+      <ion-badge color="danger" slot="end">({{tcaFlipCoins.coins.length}})</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Number of Nickel</ion-label>
-      <ion-badge color="light" slot="end">76</ion-badge>
+      <ion-badge color="light" slot="end">({{tcaFlipCoins.coins.length}})</ion-badge>
     </ion-item>
     <br />
     <ion-footer>

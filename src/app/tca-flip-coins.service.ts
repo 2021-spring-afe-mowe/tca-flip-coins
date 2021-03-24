@@ -8,4 +8,8 @@ export class TcaFlipCoinsService {
   constructor() { }
 
   gameResult = [];
+  players = [];
+  coins = [];
+  whoCalled = [];
+  whatCalled = [];
 }
