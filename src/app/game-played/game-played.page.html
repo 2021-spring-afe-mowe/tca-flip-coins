@@ -17,7 +17,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Percent of Head</ion-label>
-      <ion-badge color="tertiary" slot="end">57%</ion-badge>
+      <ion-badge color="tertiary" slot="end">{{ winningPercentage | percent }}</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Number of Tail</ion-label>
@@ -26,7 +26,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Percent of Tail</ion-label>
-      <ion-badge color="warning" slot="end">43%</ion-badge>
+      <ion-badge color="warning" slot="end">{{ loosingPercentage | percent }}</ion-badge>
     </ion-item>
     <ion-header translucent>
       <ion-toolbar>
@@ -39,7 +39,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Percent of Head</ion-label>
-      <ion-badge color="success" slot="end">43%</ion-badge>
+      <ion-badge color="success" slot="end">{{ loosingPercentage | percent }}</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Number of Tail</ion-label>
@@ -48,7 +48,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Percent of Tail</ion-label>
-      <ion-badge color="tertiary" slot="end">57%</ion-badge>
+      <ion-badge color="tertiary" slot="end">{{ winningPercentage | percent }}</ion-badge>
     </ion-item>
     <ion-header translucent>
       <ion-toolbar>

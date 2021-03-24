@@ -25,4 +25,16 @@ export class WinPage implements OnInit {
     this.router.navigateByUrl("/game-played");
   }
 
+  get winningPercentage() {
+    return this.tcaFlipCoins.gameResult.filter(x => x == "W").length
+    / this.tcaFlipCoins.gameResult.length
+    ;
+  }
+
+  get loosingPercentage() {
+    return this.tcaFlipCoins.gameResult.filter(x => x == "L").length
+    / this.tcaFlipCoins.gameResult.length
+    ;
+  }
+
 }

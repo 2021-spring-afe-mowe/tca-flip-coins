@@ -40,4 +40,16 @@ export class GamePlayedPage implements OnInit {
     this.router.navigateByUrl("/loose");
   }
 
+  get winningPercentage() {
+    return this.myTcaFlipCoinsSvc.gameResult.filter(x => x == "W").length
+    / this.myTcaFlipCoinsSvc.gameResult.length
+    ;
+  }
+
+  get loosingPercentage() {
+    return this.myTcaFlipCoinsSvc.gameResult.filter(x => x == "L").length
+    / this.myTcaFlipCoinsSvc.gameResult.length
+    ;
+  }
+
 }
