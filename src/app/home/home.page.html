@@ -1,107 +1,92 @@
 
-
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title size="large">
-      tca-flip-coins 
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title size="large">
+            tca-flip-coins 
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
-  <ion-card>
-    <ion-card-header>
-    <img src="assets/head-or-tail.jpg" alt="coins">
 
-    </ion-card-header>
-    <ion-tabs>
+    <ion-card>
+        <ion-card-header>
+          <img src="assets/head-or-tail.jpg" alt="coins">
 
-    </ion-tabs>
+        </ion-card-header>
+      <ion-tabs>
 
-    <ion-tab-button >
+      </ion-tabs>
 
-    <ion-button size="large" shape="round" (click)="gamePlayed()" >FLIP COINS HERE</ion-button>
+      <ion-tab-button >
 
-    </ion-tab-button>
-  </ion-card>
+        <ion-button size="large" shape="round" (click)="gamePlayed()" >FLIP COINS HERE</ion-button>
+
+      </ion-tab-button>
+    </ion-card>
 
   <ion-list>
 
-    <ion-list-header color="danger">
-      PICK HEAD or TAIL ({{tcaFlipCoins.gameResult.length}})
-    </ion-list-header>
+  <ion-list-header color="danger">
+    PICK HEAD or TAIL ({{tcaFlipCoins.gameResult.length}})
+  </ion-list-header>
 
-    
+  <ion-radio-group [(ngModel)]="tcaFlipCoins.albertCalled">
       <ion-item>
-        <ion-button expand="block" size="large" color="light" (click)="showNumberOfHead()">
-        <ion-label>
-          <div>
-            <p>ALBERT calls head</p> 
-            <p>VS</p>
-            <p>OPPONENT calls Tail</p> 
-          </div>
-          
-        </ion-label>
-        
-        <ion-checkbox color="primary" slot="start"></ion-checkbox>
-      </ion-button>
 
-        
-      </ion-item>
+      <ion-label>
+      <div>
+      <p>ALBERT calls head</p> 
+      <p>VS</p>
+      <p>OPPONENT calls Tail</p> 
+      </div>
 
-      <ion-item>
-        <ion-button expand="block" size="large" color="light" (click)="showAlbertNumberOfTail()">
-        <ion-checkbox color="success"  slot="start"></ion-checkbox>
-        
-        <ion-label>
-          <div>
-            <p>ALBERT calls Tail</p> 
-            <p>VS</p>
-            <p>OPPONENT calls Head</p> 
-          </div>
-        </ion-label>
-      </ion-button>
+      </ion-label>
 
-        
-      </ion-item>
-
-      
-   
-
-    </ion-list>
-
-    <ion-list>
-
-      <ion-list-header color="danger">
-        CHOOSE YOUR COINS ({{tcaFlipCoins.gameResult.length}})
-      </ion-list-header>
-
-      <ion-item>
-        <ion-button expand="block" size="default" color="light" (click)="showNumberOfQuarter()">
-
-        <ion-label>
-          Quarter
-        </ion-label>
-
-        <ion-checkbox color="warning" slot="start"></ion-checkbox>
-      </ion-button>
+      <ion-radio value="heads"></ion-radio>
 
       </ion-item>
 
       <ion-item>
-        <ion-button expand="block" size="default" color="light" (click)="showNumberOfNickel()">
-       
 
-        <ion-checkbox color="dark"  slot="start"></ion-checkbox>
+      <ion-label>
+      <div>
+      <p>ALBERT calls Tail</p> 
+      <p>VS</p>
+      <p>OPPONENT calls Head</p> 
+      </div>
+      </ion-label>
 
-        
-        
-        <ion-label>
-          Nickel
-        </ion-label>
-      </ion-button>
-    </ion-item>
+      <ion-radio value="tails"></ion-radio>
+      </ion-item>
+  </ion-radio-group>
+
+  </ion-list>
+
+  <ion-list>
+
+  <ion-list-header color="danger">
+  CHOOSE YOUR COINS ({{tcaFlipCoins.gameResult.length}})
+  </ion-list-header>
+
+
+  <ion-item>
+
+
+
+  <ion-label>
+  Quarter
+  </ion-label>
+
+  </ion-item>
+
+  <ion-item>
+
+  <ion-label>
+  Nickel
+  </ion-label>
+
+  </ion-item>
 
   </ion-list>
 

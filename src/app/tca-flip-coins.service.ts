@@ -12,4 +12,6 @@ export class TcaFlipCoinsService {
   coins = [];
   whoCalled = [];
   whatCalled = [];
+
+  albertCalled = "heads"
 }
