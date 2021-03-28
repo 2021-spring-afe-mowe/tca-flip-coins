@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TcaFlipCoinsService } from '../tca-flip-coins.service';
 
 @Component({
@@ -9,10 +10,19 @@ import { TcaFlipCoinsService } from '../tca-flip-coins.service';
 export class RecordResultPage implements OnInit {
 
   constructor(
-    public sharedDataService: TcaFlipCoinsService
+    private routerSvc: Router
+    , public sharedDataService: TcaFlipCoinsService
   ) { }
 
   ngOnInit() {
+  }
+  
+  playAgain(){
+    this.routerSvc.navigateByUrl("/");
+  }
+
+  Stats(){
+    this.routerSvc.navigateByUrl("/game-played");
   }
 
 }
