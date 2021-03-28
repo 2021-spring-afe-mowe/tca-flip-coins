@@ -19,7 +19,7 @@
       </ion-tabs>
 
       <ion-tab-button >
-
+    
         <ion-button size="large" shape="round" (click)="gamePlayed()" >FLIP COINS HERE</ion-button>
 
       </ion-tab-button>
@@ -69,6 +69,7 @@
   CHOOSE YOUR COINS ({{tcaFlipCoins.gameResult.length}})
   </ion-list-header>
 
+  <ion-radio-group [(ngModel)]="tcaFlipCoins.albertCoins">
 
   <ion-item>
 
@@ -77,6 +78,7 @@
   <ion-label>
   Quarter
   </ion-label>
+  <ion-radio value="quarter"></ion-radio>
 
   </ion-item>
 
@@ -86,7 +88,11 @@
   Nickel
   </ion-label>
 
+  <ion-radio value="nickel"></ion-radio>
+
   </ion-item>
+
+  </ion-radio-group>    
 
   </ion-list>
 
