@@ -32,6 +32,10 @@ export class GamePlayedPage implements OnInit {
     this.router.navigateByUrl("/win");
   }
 
+  Previous(){
+    this.router.navigateByUrl("/record-result");
+  }
+
   lostGame(){
     this.myTcaFlipCoinsSvc.gameResult = [
       ...this.myTcaFlipCoinsSvc.gameResult

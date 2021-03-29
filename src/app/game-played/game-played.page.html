@@ -20,12 +20,12 @@
       <ion-badge color="tertiary" slot="end">{{ winningPercentage | percent }}</ion-badge>
     </ion-item>
     <ion-item>
-      <ion-label>Number of Tail</ion-label>
+      <ion-label>Number of Tail Win</ion-label>
       <ion-badge color="success" slot="end">({{numberOfTail}})</ion-badge>
       
     </ion-item>
     <ion-item>
-      <ion-label>Percent of Tail</ion-label>
+      <ion-label>Percent of Tail Win</ion-label>
       <ion-badge color="warning" slot="end">{{ loosingPercentage | percent }}</ion-badge>
     </ion-item>
     <ion-header translucent>
@@ -34,22 +34,70 @@
       </ion-toolbar>
     </ion-header>
     <ion-item>
-      <ion-label>Number of Head</ion-label>
+      <ion-label>Number of Head Win</ion-label>
       <ion-badge color="light" slot="end">({{numberOfHead}})</ion-badge>
     </ion-item>
     <ion-item>
-      <ion-label>Percent of Head</ion-label>
+      <ion-label>Percent of Head Win</ion-label>
       <ion-badge color="success" slot="end">{{ loosingPercentage | percent }}</ion-badge>
     </ion-item>
     <ion-item>
-      <ion-label>Number of Tail</ion-label>
+      <ion-label>Number of Tail Win</ion-label>
       <ion-badge color="warning" slot="end">({{numberOfTail}})</ion-badge>
       
     </ion-item>
     <ion-item>
-      <ion-label>Percent of Tail</ion-label>
+      <ion-label>Percent of Tail Win</ion-label>
       <ion-badge color="tertiary" slot="end">{{ winningPercentage | percent }}</ion-badge>
     </ion-item>
+
+
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title color="primary">Albert lost with Quater</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-item>
+      <ion-label>Number of Head lost</ion-label>
+      <ion-badge color="warning" slot="end">({{numberOfHead}})</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Percent of Head lost</ion-label>
+      <ion-badge color="tertiary" slot="end">{{ winningPercentage | percent }}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Number of Tail lost</ion-label>
+      <ion-badge color="success" slot="end">({{numberOfTail}})</ion-badge>
+      
+    </ion-item>
+    <ion-item>
+      <ion-label>Percent of Tail lost</ion-label>
+      <ion-badge color="warning" slot="end">{{ loosingPercentage | percent }}</ion-badge>
+    </ion-item>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title color="primary">Albert lost with Nickel</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-item>
+      <ion-label>Number of Head lost</ion-label>
+      <ion-badge color="light" slot="end">({{numberOfHead}})</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Percent of Head lost</ion-label>
+      <ion-badge color="success" slot="end">{{ loosingPercentage | percent }}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Number of Tail lost</ion-label>
+      <ion-badge color="warning" slot="end">({{numberOfTail}})</ion-badge>
+      
+    </ion-item>
+    <ion-item>
+      <ion-label>Percent of Tail lost</ion-label>
+      <ion-badge color="tertiary" slot="end">{{ winningPercentage | percent }}</ion-badge>
+    </ion-item>
+
+    
     <ion-header translucent>
       <ion-toolbar>
         <ion-title color="primary">Coins Used</ion-title>
@@ -57,11 +105,11 @@
       </ion-toolbar>
     </ion-header>
     <ion-item>
-      <ion-label>Number of Quarter</ion-label>
+      <ion-label>Number of Quarter flipped</ion-label>
       <ion-badge color="danger" slot="end">({{numberOfQuarter}})</ion-badge>
     </ion-item>
     <ion-item>
-      <ion-label>Number of Nickel</ion-label>
+      <ion-label>Number of Nickel flipped</ion-label>
       <ion-badge color="light" slot="end">({{numberOfNickel}})</ion-badge>
     </ion-item>
     <br />
@@ -69,9 +117,9 @@
       <ion-toolbar color="tertiary">
         
       
-    <ion-button size="large" color="success" slot="start" (click)="wonGame()">WIN</ion-button>&nbsp;&nbsp;&nbsp;&nbsp;
-    <ion-button size="large" color="success" slot="start" (click)="playAgain()">PLAY AGAIN</ion-button>
-    <ion-button size="large" color="danger" slot="end" (click)="lostGame()">LOOSE</ion-button>
+    <ion-button size="large" color="danger" slot="start" (click)="Previous()">Back</ion-button>
+    <ion-button size="large" color="success" slot="end" (click)="playAgain()">Done</ion-button>
+    
   </ion-toolbar>
   </ion-footer>
   </ion-list>
