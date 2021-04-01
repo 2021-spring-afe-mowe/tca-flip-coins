@@ -15,4 +15,6 @@ export class TcaFlipCoinsService {
 
   albertCalled = "heads";
   albertCoins = "quarter";
+  albertFirstChoice = "won";
+  
 }

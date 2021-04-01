@@ -31,7 +31,7 @@
     PICK HEAD or TAIL ({{tcaFlipCoins.gameResult.length}})
   </ion-list-header>
 
-  <ion-radio-group [(ngModel)]="tcaFlipCoins.albertCalled">
+  <ion-radio-group [(ngModel)]="tcaFlipCoins.albertCalled" >
       <ion-item>
 
       <ion-label>
@@ -43,7 +43,9 @@
 
       </ion-label>
 
-      <ion-radio slot="end" color="tertiary" value="heads"></ion-radio>
+      <ion-radio slot="end" color="tertiary" value="heads" ></ion-radio>
+      
+
 
       </ion-item>
 
@@ -57,7 +59,9 @@
       </div>
       </ion-label>
 
-      <ion-radio slot="end" color="success" value="tails"></ion-radio>
+      <ion-radio slot="end" color="success" value="tails" ></ion-radio>
+     
+
       </ion-item>
   </ion-radio-group>
 
@@ -95,6 +99,44 @@
   </ion-radio-group>    
 
   </ion-list>
+
+  <ion-list>
+
+    <ion-list-header color="danger">
+      WHO CALL FIRST ({{tcaFlipCoins.gameResult.length}})
+    </ion-list-header>
+  
+    <ion-radio-group [(ngModel)]="tcaFlipCoins.albertFirstChoice" >
+        <ion-item>
+  
+        <ion-label>
+        <div>
+        <p>ALBERT calls FIRST</p> 
+      
+        </div>
+  
+        </ion-label>
+  
+        <ion-radio slot="end" color="tertiary" value="won" ></ion-radio>
+          
+        </ion-item>
+  
+        <ion-item>
+  
+        <ion-label>
+        <div>
+        
+        <p>OPPONENT calls FIRST</p> 
+        </div>
+        </ion-label>
+  
+        <ion-radio slot="end" color="success" value="LOST" ></ion-radio>
+       
+  
+        </ion-item>
+    </ion-radio-group>
+  
+    </ion-list>
 
 </ion-content>
 
