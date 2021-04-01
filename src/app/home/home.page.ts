@@ -25,6 +25,11 @@ export class HomePage {
   ) {}
   
   gamePlayed() {
+    this.tcaFlipCoins.gameResult = [
+      ...this.tcaFlipCoins.gameResult
+    
+    ,""
+    ];
     this.routerSvc.navigateByUrl("/record-result");
   }
   
