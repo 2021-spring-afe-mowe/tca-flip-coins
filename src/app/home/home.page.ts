@@ -28,7 +28,7 @@ export class HomePage {
     this.tcaFlipCoins.gameResult = [
       ...this.tcaFlipCoins.gameResult
     
-    ,""
+    ,"win"
     ];
     this.routerSvc.navigateByUrl("/record-result");
   }

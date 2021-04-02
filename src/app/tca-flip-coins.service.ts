@@ -13,8 +13,14 @@ export class TcaFlipCoinsService {
   whoCalled = [];
   whatCalled = [];
 
-  albertCalled = "heads";
+  albertCalled = "head";
   albertCoins = "quarter";
   albertFirstChoice = "won";
+
+  albertCalledHeadWin = "H";
+  albertCalledHeadLost = "h";
+
+  albertCalledTailWin = "T";
+  albertCalledTailLost = "t";
   
 }
