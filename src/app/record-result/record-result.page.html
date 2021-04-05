@@ -9,10 +9,7 @@
   <h2>Time to flip your <ion-text color="danger">{{ sharedDataService.albertCoins }}</ion-text></h2>
   <br/>
   <h3>Albert called <ion-text color="danger">{{ sharedDataService.albertCalled }}</ion-text></h3>
-  <br />
-  
-  <h3>Albert <ion-text color="danger">{{ sharedDataService.albertFirstChoice }}</ion-text> the game</h3>
- 
+
 
   <ion-footer>
     <ion-toolbar color="tertiary">
@@ -20,7 +17,10 @@
     
   
   <ion-button size="large" color="success" slot="start" (click)="playAgain()">DONE</ion-button>
-  <ion-button size="large" color="danger" slot="end" (click)="Stats()">STATS</ion-button>
+
+  <ion-button size="large" color="success" slot="end" (click)="wonGame()">I Won</ion-button>
+
+  <ion-button size="large" color="danger" slot="end" (click)="lostGame()">I Lost</ion-button>
 </ion-toolbar>
 </ion-footer>
   </ion-list>

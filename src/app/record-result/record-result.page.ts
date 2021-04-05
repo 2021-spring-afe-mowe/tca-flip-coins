@@ -25,4 +25,20 @@ export class RecordResultPage implements OnInit {
     this.routerSvc.navigateByUrl("/game-played");
   }
 
+  lostGame(){
+    this.sharedDataService.gameResult = [
+      ...this.sharedDataService.gameResult
+    ,"L"
+    ];
+    this.routerSvc.navigateByUrl("/game-played");
+  }
+
+  wonGame(){
+    this.sharedDataService.gameResult = [
+      ...this.sharedDataService.gameResult
+    ,"w"
+    ];
+    this.routerSvc.navigateByUrl("/game-played");
+  }
+
 }
