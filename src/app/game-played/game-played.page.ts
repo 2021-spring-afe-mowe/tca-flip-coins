@@ -23,26 +23,13 @@ export class GamePlayedPage implements OnInit {
 
   ngOnInit() {
   }
-  wonGame(){
-    this.myTcaFlipCoinsSvc.gameResult = [
-      ...this.myTcaFlipCoinsSvc.gameResult
-    ,"W"
-    ];
-    
-    this.router.navigateByUrl("/win");
-  }
+  
 
   Previous(){
     this.router.navigateByUrl("/record-result");
   }
 
-  lostGame(){
-    this.myTcaFlipCoinsSvc.gameResult = [
-      ...this.myTcaFlipCoinsSvc.gameResult
-    ,"L"
-    ];
-    this.router.navigateByUrl("/loose");
-  }
+  
   playAgain() {
     this.router.navigateByUrl("/");
   }
