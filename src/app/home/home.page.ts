@@ -38,6 +38,21 @@ export class HomePage {
     ];
     this.routerSvc.navigateByUrl("/record-result");
   }
+
+  get albertCoinsUsed() {
+    const mytotalCoinsUsed = this.tcaFlipCoins.gameResults.filter(
+      x => x.albertCoin == "nickel" || x.albertCoin == "quarter"  && x.albertResult == "L" || x.albertResult == "W"  
+      ).length;
+    return mytotalCoinsUsed;
+   // return 2;
+  }
+
+  get albertChoicesMade() {
+    const mytotalChoiceMade = this.tcaFlipCoins.gameResults.filter(
+      x => x.albertCoin == "nickel" || x.albertCoin == "quarter"  && x.albertResult == "L" || x.albertResult == "W"  
+      ).length;
+    return mytotalChoiceMade;
+  }
   
 
 

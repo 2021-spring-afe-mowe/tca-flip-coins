@@ -78,6 +78,8 @@ export class GamePlayedPage implements OnInit {
     
   }
 
+  //win with Quarter
+
   get albertWinQuarter() {
     const myQuarterWins = this.myTcaFlipCoinsSvc.gameResults.filter(
       x => x.albertResult == "W" && x.albertCoin == "quarter"
@@ -86,5 +88,117 @@ export class GamePlayedPage implements OnInit {
   }
 
 
+
+  get albertWinHeadQuarter() {
+    const myHeadWins = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "quarter" && x.albertCalled == "heads"
+      ).length;
+    return myHeadWins;
+  }
+  
+
+  get albertWinTailQuarter() {
+    const myQuarterTailWins = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "quarter" && x.albertCalled == "tails"
+      ).length;
+    return myQuarterTailWins;
+  }
+
+
+  //Loose with quarter
+
+  get albertLooseQuarter() {
+    const myQuarterlooses = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "quarter"
+      ).length;
+    return myQuarterlooses;
+  }
+
+  get albertLooseHeadQuarter() {
+    const myHeadlooses = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "quarter" && x.albertCalled == "heads"
+      ).length;
+    return myHeadlooses;
+  }
+
+  get albertLooseTailQuarter() {
+    const myQuarterTailLooses = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "quarter" && x.albertCalled == "tails"
+      ).length;
+    return myQuarterTailLooses;
+  }
+
+   //win with Nickel
+
+  get albertWinNickel() {
+    const myNickelWins = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "nickel"
+      ).length;
+    return myNickelWins;
+  }
+
+  get albertWinHeadNickel() {
+    const myNikelHeadWins = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "nickel" && x.albertCalled == "heads"
+      ).length;
+    return myNikelHeadWins;
+  }
+
+  get albertWinTailNickel() {
+    const myNickelTailWins = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "nickel" && x.albertCalled == "tails"
+      ).length;
+    return myNickelTailWins;
+  }
+
+  //Loose with Nickel
+
+  get albertLooseNickel() {
+    const myNickelLooses = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "nickel" 
+      ).length;
+    return myNickelLooses;
+  }
+
+  get albertLooseHeadNickel() {
+    const myNickelHeadLooses = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "nickel" && x.albertCalled == "heads"
+      ).length;
+    return myNickelHeadLooses;
+  }
+
+  get albertLooseTailNickel() {
+    const myNickelTailLooses = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "nickel" && x.albertCalled == "tails"
+      ).length;
+    return myNickelTailLooses;
+  }
+
+  //coins used
+
+  get albertCoinsUsed() {
+    const mytotalCoinsUsed = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertCoin == "nickel" || x.albertCoin == "quarter"  && x.albertResult == "L" || x.albertResult == "W"
+      ).length;
+    return mytotalCoinsUsed;
+  
+  }
+
+  get albertQuarterUsed() {
+    const myQuarterCoinsUsed = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertCoin == "quarter"  && x.albertResult == "L" || x.albertResult == "W"
+      ).length;
+    return myQuarterCoinsUsed;
+  }
+
+  get albertNickelUsed() {
+    const myNickelCoinsUsed = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertCoin == "nickel"  && x.albertResult == "L" || x.albertResult == "W"
+      ).length;
+    return myNickelCoinsUsed;
+  }
+
+
+  
 
 }

@@ -13,7 +13,7 @@
     </ion-header>
     <ion-item>
       <ion-label>Number of Head Win</ion-label>
-      <ion-badge color="warning" slot="end">({{ myTcaFlipCoinsSvc.gameResults.length }})</ion-badge>
+      <ion-badge color="warning" slot="end">({{albertWinHeadQuarter}})</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Percent of Head Win</ion-label>
@@ -21,7 +21,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Number of Tail Win</ion-label>
-      <ion-badge color="success" slot="end">({{ myTcaFlipCoinsSvc.gameResults.length }})</ion-badge>
+      <ion-badge color="success" slot="end">({{albertWinTailQuarter}})</ion-badge>
       
     </ion-item>
     <ion-item>
@@ -30,12 +30,12 @@
     </ion-item>
     <ion-header translucent>
       <ion-toolbar>
-        <ion-title color="primary">Albert won with Nickel</ion-title>
+        <ion-title color="primary">Albert won with Nickel({{albertWinNickel}})</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-item>
       <ion-label>Number of Head Win</ion-label>
-      <ion-badge color="light" slot="end">({{ myTcaFlipCoinsSvc.gameResults.length }})</ion-badge>
+      <ion-badge color="light" slot="end">({{albertWinHeadNickel}})</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Percent of Head Win</ion-label>
@@ -43,7 +43,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Number of Tail Win</ion-label>
-      <ion-badge color="warning" slot="end">({{ myTcaFlipCoinsSvc.gameResults.length }})</ion-badge>
+      <ion-badge color="warning" slot="end">({{albertWinTailNickel}})</ion-badge>
       
     </ion-item>
     <ion-item>
@@ -54,12 +54,12 @@
 
     <ion-header translucent>
       <ion-toolbar>
-        <ion-title color="primary">Albert lost with Quarter</ion-title>
+        <ion-title color="primary">Albert lost with Quarter({{albertLooseQuarter}})</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-item>
       <ion-label>Number of Head lost</ion-label>
-      <ion-badge color="warning" slot="end">({{ myTcaFlipCoinsSvc.gameResults.length }})</ion-badge>
+      <ion-badge color="warning" slot="end">({{albertLooseHeadQuarter}})</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Percent of Head lost</ion-label>
@@ -67,7 +67,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Number of Tail lost</ion-label>
-      <ion-badge color="success" slot="end">({{ myTcaFlipCoinsSvc.gameResults.length }})</ion-badge>
+      <ion-badge color="success" slot="end">({{albertLooseTailQuarter}})</ion-badge>
       
     </ion-item>
     <ion-item>
@@ -76,12 +76,12 @@
     </ion-item>
     <ion-header translucent>
       <ion-toolbar>
-        <ion-title color="primary">Albert lost with Nickel</ion-title>
+        <ion-title color="primary">Albert lost with Nickel ({{albertLooseNickel}})</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-item>
       <ion-label>Number of Head lost</ion-label>
-      <ion-badge color="light" slot="end">({{ myTcaFlipCoinsSvc.gameResults.length }})</ion-badge>
+      <ion-badge color="light" slot="end">({{albertLooseHeadNickel}})</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Percent of Head lost</ion-label>
@@ -89,7 +89,7 @@
     </ion-item>
     <ion-item>
       <ion-label>Number of Tail lost</ion-label>
-      <ion-badge color="warning" slot="end">({{ myTcaFlipCoinsSvc.gameResults.length }})</ion-badge>
+      <ion-badge color="warning" slot="end">({{albertLooseTailNickel}})</ion-badge>
       
     </ion-item>
     <ion-item>
@@ -100,17 +100,17 @@
     
     <ion-header translucent>
       <ion-toolbar>
-        <ion-title color="primary">Coins Used</ion-title>
+        <ion-title color="primary">Coins Used ({{albertCoinsUsed}})</ion-title>
         
       </ion-toolbar>
     </ion-header>
     <ion-item>
-      <ion-label>Number of Quarter flipped</ion-label>
-      <ion-badge color="danger" slot="end">0</ion-badge>
+      <ion-label>Number of Quarter flipped </ion-label>
+      <ion-badge color="danger" slot="end">({{albertQuarterUsed}})</ion-badge>
     </ion-item>
     <ion-item>
       <ion-label>Number of Nickel flipped</ion-label>
-      <ion-badge color="light" slot="end">0</ion-badge>
+      <ion-badge color="light" slot="end">({{albertNickelUsed}})</ion-badge>
     </ion-item>
     <br />
     <ion-footer>

@@ -28,7 +28,7 @@
   <ion-list>
 
   <ion-list-header color="danger">
-    PICK HEAD or TAIL ({{tcaFlipCoins.gameResults.length}})
+    PICK HEAD or TAIL ({{albertChoicesMade}})
   </ion-list-header>
 
   <ion-radio-group [(ngModel)]="tcaFlipCoins.albertCalled" >
@@ -70,7 +70,7 @@
   <ion-list>
 
   <ion-list-header color="danger">
-  CHOOSE YOUR COINS ({{tcaFlipCoins.gameResults.length}})
+  CHOOSE YOUR COINS ({{albertCoinsUsed}})
   </ion-list-header>
 
   <ion-radio-group [(ngModel)]="tcaFlipCoins.albertCoin">
