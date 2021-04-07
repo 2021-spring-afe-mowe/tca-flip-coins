@@ -78,7 +78,12 @@ export class GamePlayedPage implements OnInit {
     
   }
 
-  
+  get albertWinQuarter() {
+    const myQuarterWins = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "quarter"
+      ).length;
+    return myQuarterWins;
+  }
 
 
 
