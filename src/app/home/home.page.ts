@@ -25,43 +25,21 @@ export class HomePage {
   ) {}
   
   gamePlayed() {
-    this.tcaFlipCoins.gameResult = [
-      ...this.tcaFlipCoins.gameResult
+    this.tcaFlipCoins.gameResults = [
+      ...this.tcaFlipCoins.gameResults
     
-    ,"win"
+    //Add a new game result based on what just happen 
+      //when you flipped the coin
+      ,{
+        albertCalled: this.tcaFlipCoins.albertCalled
+        , albertCoin: this.tcaFlipCoins.albertCoin
+        , albertResult: "" 
+      }
     ];
     this.routerSvc.navigateByUrl("/record-result");
   }
   
-  showNumberOfHead() {
-    this.tcaFlipCoins.whatCalled = [
-      ...this.tcaFlipCoins.whatCalled
-    
-    ,"H"
-    ];
-  }
-  
-  showAlbertNumberOfTail() {
-    this.tcaFlipCoins.whatCalled = [
-      ...this.tcaFlipCoins.whatCalled
-  
-      ,"T"
-    ];
-  }
-  
-  showNumberOfQuarter() {
-    this.tcaFlipCoins.coins = [
-      ...this.tcaFlipCoins.coins
-    ,"Q"
-    ];
-  }
 
-  showNumberOfNickel() { 
-    this.tcaFlipCoins.coins = [
-      ...this.tcaFlipCoins.coins
-    ,"N"
-    ];
-  }
 
 }
 

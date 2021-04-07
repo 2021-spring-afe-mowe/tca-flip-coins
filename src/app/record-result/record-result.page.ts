@@ -26,17 +26,34 @@ export class RecordResultPage implements OnInit {
   }
 
   lostGame(){
-    this.sharedDataService.gameResult = [
-      ...this.sharedDataService.gameResult
-    ,"L"
+    this.sharedDataService.gameResults = [
+      //spread in all the previous game result
+      ...this.sharedDataService.gameResults
+
+      //Add a new game result based on what just happen 
+      //when you flipped the coin
+    ,{
+      albertCalled: this.sharedDataService.albertCalled
+      , albertCoin: this.sharedDataService.albertCoin
+      , albertResult: "L" 
+    }
     ];
     this.routerSvc.navigateByUrl("/game-played");
   }
 
   wonGame(){
-    this.sharedDataService.gameResult = [
-      ...this.sharedDataService.gameResult
-    ,"w"
+    this.sharedDataService.gameResults = [
+      //spread in all the previous game result
+      ...this.sharedDataService.gameResults
+
+      //Add a new game result based on what just happen 
+      //when you flipped the coin
+    ,{
+      albertCalled: this.sharedDataService.albertCalled
+      , albertCoin: this.sharedDataService.albertCoin
+      , albertResult: "W" 
+    }
+  
     ];
     this.routerSvc.navigateByUrl("/game-played");
   }

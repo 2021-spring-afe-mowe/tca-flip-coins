@@ -34,36 +34,52 @@ export class GamePlayedPage implements OnInit {
     this.router.navigateByUrl("/");
   }
 
-  get winningPercentage() {
-    return this.myTcaFlipCoinsSvc.gameResult.filter(x => x == "W").length
-    / this.myTcaFlipCoinsSvc.gameResult.length
-    ;
+  // get winningPercentage() {
+  //   return this.myTcaFlipCoinsSvc.gameResults.filter(x => x == "W").length
+  //   / this.myTcaFlipCoinsSvc.gameResults.length
+  //   ;
+  // }
+
+  // get loosingPercentage() {
+  //   return this.myTcaFlipCoinsSvc.gameResults.filter(x => x == "L").length
+  //   / this.myTcaFlipCoinsSvc.gameResults.length
+  //   ;
+  // }
+  lostGame(){
+    this.myTcaFlipCoinsSvc.gameResults = [
+      //spread in all the previous game result
+      ...this.myTcaFlipCoinsSvc.gameResults
+
+      //Add a new game result based on what just happen 
+      //when you flipped the coin
+    ,{
+      albertCalled: this.myTcaFlipCoinsSvc.albertCalled
+      , albertCoin: this.myTcaFlipCoinsSvc.albertCoin
+      , albertResult: "L" 
+    }
+    ];
+    
   }
 
-  get loosingPercentage() {
-    return this.myTcaFlipCoinsSvc.gameResult.filter(x => x == "L").length
-    / this.myTcaFlipCoinsSvc.gameResult.length
-    ;
+  wonGame(){
+    this.myTcaFlipCoinsSvc.gameResults = [
+      //spread in all the previous game result
+      ...this.myTcaFlipCoinsSvc.gameResults
+
+      //Add a new game result based on what just happen 
+      //when you flipped the coin
+    ,{
+      albertCalled: this.myTcaFlipCoinsSvc.albertCalled
+      , albertCoin: this.myTcaFlipCoinsSvc.albertCoin
+      , albertResult: "W" 
+    }
+  
+    ];
+    
   }
 
-  get numberOfHead() {
-    return this.myTcaFlipCoinsSvc.whatCalled.filter(x => x == "H").length
-    ;
-  }
+  
 
-  get numberOfTail() {
-    return this.myTcaFlipCoinsSvc.whatCalled.filter(x => x == "T").length
-    ;
-  }
 
-  get numberOfQuarter() {
-    return this.myTcaFlipCoinsSvc.coins.filter(x => x == "Q").length
-    ;
-  }
-
-  get numberOfNickel() {
-    return this.myTcaFlipCoinsSvc.coins.filter(x => x == "N").length
-    ;
-  }
 
 }
