@@ -34,12 +34,7 @@ export class GamePlayedPage implements OnInit {
     this.router.navigateByUrl("/");
   }
 
-  // get winningPercentage() {
-  //   return this.myTcaFlipCoinsSvc.gameResults.filter(x => x == "W").length
-  //   / this.myTcaFlipCoinsSvc.gameResults.length
-  //   ;
-  // }
-
+ 
   // get loosingPercentage() {
   //   return this.myTcaFlipCoinsSvc.gameResults.filter(x => x == "L").length
   //   / this.myTcaFlipCoinsSvc.gameResults.length
@@ -104,6 +99,23 @@ export class GamePlayedPage implements OnInit {
     return myQuarterTailWins;
   }
 
+  //win percents with quarter
+
+  get quarterHeadWinningPercentage() {
+    const myQuarterWinsPercent = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "quarter" && x.albertCalled == "heads"
+      ).length / this.myTcaFlipCoinsSvc.gameResults.length;
+    return myQuarterWinsPercent;
+  }
+
+  get quarterTailWinningPercentage() {
+    const myTailWinsPercent = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "quarter" && x.albertCalled == "tails"
+      ).length / this.myTcaFlipCoinsSvc.gameResults.length;
+    return myTailWinsPercent;
+  }
+ 
+
 
   //Loose with quarter
 
@@ -126,6 +138,22 @@ export class GamePlayedPage implements OnInit {
       x => x.albertResult == "L" && x.albertCoin == "quarter" && x.albertCalled == "tails"
       ).length;
     return myQuarterTailLooses;
+  }
+
+  //loose percents with quarter
+
+  get quarterHeadLoosingPercentage() {
+    const myQuarterHeadWinsPercent = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "quarter" && x.albertCalled == "heads"
+      ).length / this.myTcaFlipCoinsSvc.gameResults.length;
+    return myQuarterHeadWinsPercent;
+  }
+
+  get quarterTailLoosingPercentage() {
+    const myQuarterTailWinsPercent = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "quarter" && x.albertCalled == "tails"
+      ).length / this.myTcaFlipCoinsSvc.gameResults.length;
+    return myQuarterTailWinsPercent;
   }
 
    //win with Nickel
@@ -151,6 +179,22 @@ export class GamePlayedPage implements OnInit {
     return myNickelTailWins;
   }
 
+  //win percents with Nickel
+
+  get nickelHeadWinningPercentage() {
+    const myNickelWinsPercent = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "nickel" && x.albertCalled == "heads"
+      ).length / this.myTcaFlipCoinsSvc.gameResults.length;
+    return myNickelWinsPercent;
+  }
+
+  get nickelTailWinningPercentage() {
+    const myNickelTailWinsPercent = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "W" && x.albertCoin == "nickel" && x.albertCalled == "tails"
+      ).length / this.myTcaFlipCoinsSvc.gameResults.length;
+    return myNickelTailWinsPercent;
+  }
+
   //Loose with Nickel
 
   get albertLooseNickel() {
@@ -174,11 +218,27 @@ export class GamePlayedPage implements OnInit {
     return myNickelTailLooses;
   }
 
+  //loose percents with Nickel
+
+  get nickelHeadLoosingPercentage() {
+    const mynickelHeadLoosesPercent = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "nickel" && x.albertCalled == "heads"
+      ).length / this.myTcaFlipCoinsSvc.gameResults.length;
+    return mynickelHeadLoosesPercent;
+  }
+
+  get nickelTailLoosingPercentage() {
+    const mynickelTailLoosesPercent = this.myTcaFlipCoinsSvc.gameResults.filter(
+      x => x.albertResult == "L" && x.albertCoin == "nickel" && x.albertCalled == "tails"
+      ).length / this.myTcaFlipCoinsSvc.gameResults.length;
+    return mynickelTailLoosesPercent;
+  }
+
   //coins used
 
   get albertCoinsUsed() {
     const mytotalCoinsUsed = this.myTcaFlipCoinsSvc.gameResults.filter(
-      x => x.albertCoin == "nickel" || x.albertCoin == "quarter"  && x.albertResult == "L" || x.albertResult == "W"
+      x => x.albertCoin == "nickel" || x.albertCoin == "quarter"  
       ).length;
     return mytotalCoinsUsed;
   
@@ -186,14 +246,14 @@ export class GamePlayedPage implements OnInit {
 
   get albertQuarterUsed() {
     const myQuarterCoinsUsed = this.myTcaFlipCoinsSvc.gameResults.filter(
-      x => x.albertCoin == "quarter"  && x.albertResult == "L" || x.albertResult == "W"
+      x => x.albertCoin == "quarter"  
       ).length;
     return myQuarterCoinsUsed;
   }
 
   get albertNickelUsed() {
     const myNickelCoinsUsed = this.myTcaFlipCoinsSvc.gameResults.filter(
-      x => x.albertCoin == "nickel"  && x.albertResult == "L" || x.albertResult == "W"
+      x => x.albertCoin == "nickel"
       ).length;
     return myNickelCoinsUsed;
   }
