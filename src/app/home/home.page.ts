@@ -41,7 +41,7 @@ export class HomePage {
 
   get albertCoinsUsed() {
     const mytotalCoinsUsed = this.tcaFlipCoins.gameResults.filter(
-      x =>  (x.albertCalled == "heads" || x.albertCalled == "tails")  
+      x => x.albertCoin == "nickel" || x.albertCoin == "quarter"   
       ).length;
     return mytotalCoinsUsed;
    // return 2;
@@ -49,7 +49,7 @@ export class HomePage {
 
   get albertChoicesMade() {
     const mytotalChoiceMade = this.tcaFlipCoins.gameResults.filter(
-      x => (x.albertCoin == "nickel" || x.albertCoin == "quarter")   
+      x => x.albertCalled == "heads" || x.albertCalled == "tails"   
       ).length;
     return mytotalChoiceMade;
   }
