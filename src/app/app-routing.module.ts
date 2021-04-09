@@ -35,7 +35,9 @@ const routes: Routes = [
       routes
       , { 
         preloadingStrategy: PreloadAllModules
-      , useHash: true })
+      , useHash: true 
+      }
+    )
   ],
   exports: [RouterModule]
 })
