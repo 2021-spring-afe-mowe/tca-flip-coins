@@ -25,17 +25,6 @@ export class HomePage {
   ) {}
   
   gamePlayed() {
-    // this.tcaFlipCoins.gameResults = [
-    //   ...this.tcaFlipCoins.gameResults
-    
-    // //Add a new game result based on what just happen 
-    //   //when you flipped the coin
-    //   ,{
-    //     albertCalled: this.tcaFlipCoins.albertCalled
-    //     , albertCoin: this.tcaFlipCoins.albertCoin
-    //     , albertResult: "" 
-    //   }
-    // ];
     this.routerSvc.navigateByUrl("/record-result");
   }
 
@@ -44,7 +33,6 @@ export class HomePage {
       x => x.albertCoin == "nickel" || x.albertCoin == "quarter"   
       ).length;
     return mytotalCoinsUsed;
-   // return 2;
   }
 
   get albertChoicesMade() {

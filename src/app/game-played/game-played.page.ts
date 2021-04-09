@@ -35,11 +35,6 @@ export class GamePlayedPage implements OnInit {
   }
 
  
-  // get loosingPercentage() {
-  //   return this.myTcaFlipCoinsSvc.gameResults.filter(x => x == "L").length
-  //   / this.myTcaFlipCoinsSvc.gameResults.length
-  //   ;
-  // }
   lostGame(){
     this.myTcaFlipCoinsSvc.gameResults = [
       //spread in all the previous game result

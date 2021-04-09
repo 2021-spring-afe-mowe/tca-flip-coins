@@ -16,14 +16,6 @@ const routes: Routes = [
     loadChildren: () => import('./game-played/game-played.module').then( m => m.GamePlayedPageModule)
   },
   {
-    path: 'win',
-    loadChildren: () => import('./win/win.module').then( m => m.WinPageModule)
-  },
-  {
-    path: 'loose',
-    loadChildren: () => import('./loose/loose.module').then( m => m.LoosePageModule)
-  },
-  {
     path: 'record-result',
     loadChildren: () => import('./record-result/record-result.module').then( m => m.RecordResultPageModule)
   },
