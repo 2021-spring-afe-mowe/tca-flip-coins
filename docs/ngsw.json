@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1618536199548,
+  "timestamp": 1618537114838,
   "index": "https://2021-spring-afe-mowe.github.io/tca-flip-coins/index.html",
   "assetGroups": [
     {
@@ -88,8 +88,7 @@
       "urls": [
         "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/head-or-tail.jpg",
         "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/favicon.png",
-        "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/icon-64-64.png",
-        "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/icon-72x72.png",
+        "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/favicon11.png",
         "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icons/icon-128x128.png",
         "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icons/icon-144x144.png",
         "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icons/icon-152x152.png",
@@ -160,9 +159,8 @@
     "https://2021-spring-afe-mowe.github.io/tca-flip-coins/61.524468766568df24ad1a.js": "22085924f71bfa1ecb7c473b3f95b6200059bde7",
     "https://2021-spring-afe-mowe.github.io/tca-flip-coins/9.692769ff625bcf0361a1.js": "345977bef8d109ec265691f04623af39586df653",
     "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/head-or-tail.jpg": "4f353381b19efb9a67124fc6b8e139ce49e318b6",
-    "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/favicon.png": "7798b8e0eb61d7375c245af78bbf5c916932bf13",
-    "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/icon-64-64.png": "d53b4dd21c8686a532ed2ce3d935abd2e02a6051",
-    "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/icon-72x72.png": "a2d3ab1d2f07925a5781e032c5f2d9b8db50d035",
+    "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/favicon.png": "a2d3ab1d2f07925a5781e032c5f2d9b8db50d035",
+    "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icon/favicon11.png": "7798b8e0eb61d7375c245af78bbf5c916932bf13",
     "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icons/icon-128x128.png": "01e30e109b237a0a667ae50f6e69af844cf81942",
     "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icons/icon-144x144.png": "442a82c6a08554b80f0ce07639dea69666570c21",
     "https://2021-spring-afe-mowe.github.io/tca-flip-coins/assets/icons/icon-152x152.png": "4468cf3c49590165e7a957226b051fb2842b575a",
