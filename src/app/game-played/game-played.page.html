@@ -6,11 +6,13 @@
 
 <ion-content>
   <ion-list>
+    <ion-progress-bar color="secondary" type="indeterminate"></ion-progress-bar>
     <ion-header translucent>
       <ion-toolbar>
         <ion-title color="primary">Albert won with Quarter({{albertWinQuarter}})</ion-title>
       </ion-toolbar>
     </ion-header>
+    <ion-progress-bar color="secondary" type="indeterminate" reversed="true"></ion-progress-bar>
     <ion-item>
       <ion-label color="danger">Number of Head Win</ion-label>
       <ion-badge color="warning" slot="end">({{albertWinHeadQuarter}})</ion-badge>
@@ -28,11 +30,13 @@
       <ion-label color="success">Percent of Tail Win</ion-label>
       <ion-badge color="warning" slot="end">{{ quarterTailWinningPercentage | percent }}</ion-badge>
     </ion-item>
+    <ion-progress-bar color="warning" type="indeterminate"></ion-progress-bar>
     <ion-header translucent>
       <ion-toolbar>
         <ion-title color="primary">Albert won with Nickel({{albertWinNickel}})</ion-title>
       </ion-toolbar>
     </ion-header>
+    <ion-progress-bar color="warning" type="indeterminate" reversed="true"></ion-progress-bar>
     <ion-item>
       <ion-label color="danger">Number of Head Win</ion-label>
       <ion-badge color="light" slot="end">({{albertWinHeadNickel}})</ion-badge>
@@ -51,12 +55,13 @@
       <ion-badge color="tertiary" slot="end">{{ nickelTailWinningPercentage | percent }}</ion-badge>
     </ion-item>
 
-
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
     <ion-header translucent>
       <ion-toolbar>
         <ion-title color="primary">Albert lost with Quarter({{albertLooseQuarter}})</ion-title>
       </ion-toolbar>
     </ion-header>
+    <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
     <ion-item>
       <ion-label color="danger">Number of Head lost</ion-label>
       <ion-badge color="warning" slot="end">({{albertLooseHeadQuarter}})</ion-badge>
@@ -74,11 +79,13 @@
       <ion-label color="success">Percent of Tail lost</ion-label>
       <ion-badge color="warning" slot="end">{{ quarterTailLoosingPercentage | percent }}</ion-badge>
     </ion-item>
+    <ion-progress-bar color="warning" type="indeterminate"></ion-progress-bar>
     <ion-header translucent>
       <ion-toolbar>
         <ion-title color="primary">Albert lost with Nickel ({{albertLooseNickel}})</ion-title>
       </ion-toolbar>
     </ion-header>
+    <ion-progress-bar color="warning" type="indeterminate" reversed="true"></ion-progress-bar>
     <ion-item>
       <ion-label color="danger">Number of Head lost</ion-label>
       <ion-badge color="light" slot="end">({{albertLooseHeadNickel}})</ion-badge>
@@ -97,13 +104,14 @@
       <ion-badge color="tertiary" slot="end">{{ nickelTailLoosingPercentage | percent }}</ion-badge>
     </ion-item>
 
-    
+     <ion-progress-bar color="danger" type="indeterminate"></ion-progress-bar>
     <ion-header translucent>
       <ion-toolbar>
         <ion-title color="primary">Coins Used ({{albertCoinsUsed}})</ion-title>
         
       </ion-toolbar>
     </ion-header>
+    <ion-progress-bar color="danger" type="indeterminate" reversed="true"></ion-progress-bar>
     <ion-item>
       <ion-label color="warning">Number of Quarter flipped </ion-label>
       <ion-badge color="danger" slot="end">({{albertQuarterUsed}})</ion-badge>
